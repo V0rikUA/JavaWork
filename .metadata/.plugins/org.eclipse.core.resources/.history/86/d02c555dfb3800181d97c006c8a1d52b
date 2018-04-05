@@ -9,24 +9,23 @@ public class Main {
 		Ball ballOne = new Ball("Blue", 16);
 
 		System.out.println(childOne.playWithSomething(ballOne));
-
+	
 		Ball ballTwo = new Ball("red", 13);
 		Ball ballThee = new Ball("white", 17);
 		Ball ballFour = new Ball("green", 10);
 		Ball ballFive = new Ball("yelow", 5);
-
-		Ball[] balls = new Ball[] { ballOne, ballTwo, ballThee, ballFour, ballFive };
+	
+		Ball[] balls = new Ball [] { ballOne, ballTwo, ballThee, ballFour, ballFive};
 		System.out.println();
-		for (Ball ball : balls) {
+	    for (Ball ball : balls) {
 			System.out.println(ball);
 		}
-
-		Arrays.sort(balls);
-
-		System.out.println();
-		for (Ball ball : balls) {
-			System.out.println(ball);
-		}
+	Arrays.sort(balls);
+	
+	System.out.println();
+	for (Ball ball : balls) {
+		System.out.println(ball);
+	}
 	}
 
 }

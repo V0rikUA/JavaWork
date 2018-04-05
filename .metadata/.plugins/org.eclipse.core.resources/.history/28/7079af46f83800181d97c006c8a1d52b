@@ -1,0 +1,8 @@
+package com.gmail.kirovdmitry;
+
+public class Ball {
+	private String color;
+	private int size;
+	
+
+}

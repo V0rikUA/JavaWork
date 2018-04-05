@@ -1,0 +1,12 @@
+package com.gmail.kirovdmitry;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Child childOne = new Child("Alex", "Fet", 5);
+		Ball ballOne = new Ball ("Blue", 15);
+		
+		System.out.println(childOne.playWithSomething(ballOne));
+	}
+
+}
