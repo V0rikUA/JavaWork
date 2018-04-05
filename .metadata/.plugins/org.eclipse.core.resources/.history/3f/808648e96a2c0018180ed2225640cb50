@@ -1,0 +1,24 @@
+package com.gmail.kirovdmitriy;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date dateOne = new Date();
+		SimpleDateFormat sdfOne = new SimpleDateFormat("'Today is' hh:mm a dd MMMM yyyy G");
+		SimpleDateFormat sdfTwo = new SimpleDateFormat("dd/MM/yyyy");
+		
+
+		
+		String textDate = sdfOne.format(dateOne);
+		System.out.println(textDate);
+		
+		textDate = sdfTwo.format(dateOne);
+		System.out.println(textDate);
+	}
+	
+
+}

@@ -1,0 +1,33 @@
+package com.gmail.kirovdmitriy;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		File fileOne = new File("a.txt");
+
+		try {                                   // Создание файла
+			fileOne.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		File folderOne = new File("AAA");   //Иницализация папки
+		
+		folderOne.mkdirs();                // Создание папки на ХДД
+		
+		File fileTwo = new File(folderOne, "b.txt");
+
+		File mainFolder = new File("."); // Корневой адрес каталога инициализирующей программы
+		File[] files = mainFolder.listFiles();
+		for (File file : files) {
+			System.out.println(file);
+		}
+
+	}
+
+}

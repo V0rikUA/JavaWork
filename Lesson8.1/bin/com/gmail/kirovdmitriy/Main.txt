@@ -1,0 +1,28 @@
+package com.gmail.kirovdmitriy;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("a.txt");
+		String text = "Hello World";
+
+		String[] names = new String[] { "Luck", "Dart", "Xan", "Yoda" };
+		String[] lastName = new String[] { "SkayWalker", "Waider", "Solo", "Master" };
+		int[] moneys = new int[] { 10000, -100, 500, 0 };
+
+		saveStringToFile(text, file);
+	}
+
+	public static void saveStringToFile(String text, File file) { // Метод записи чего-то в файл
+		try (PrintWriter pw = new PrintWriter(file)) {
+			pw.println(text);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

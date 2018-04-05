@@ -1,0 +1,20 @@
+package com.gmail.kirovdmitriy;
+
+import java.io.File;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File fileOne = new File("a.txt");
+		
+		File mainFolder = new File ("."); //Корневой адрес каталога инициализирующей программы
+		File [] files = mainFolder.listFiles();
+		for (File file : files) {
+			System.out.println(file);
+		}
+		
+	}
+
+}

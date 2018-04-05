@@ -1,0 +1,13 @@
+package com.gmail.kirovdmitry;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println(calculateAre-(1));
+
+	}
+
+	public static double calculateAre(double r) {
+		return Math.PI * r * r;
+	}
+}
